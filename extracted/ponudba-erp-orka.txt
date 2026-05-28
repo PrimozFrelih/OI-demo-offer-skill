@@ -1,0 +1,199 @@
+PONUDBA št. 1: Uvedba ERP rešitve
+
+PONUDBA št. 014/2026
+Za uvedbo ERP rešitve ORKA ERP v podjetje naročnika Kovinoplastika d.d.
+
+Murska Sobota, 28. 5. 2026
+
+1. Namen sodelovanja
+
+Namen sodelovanja je uvedba celovite ERP rešitve, ki bo naročniku omogočila boljši nadzor nad prodajo, nabavo, skladiščem, proizvodnjo, financami in osnovnim poročanjem vodstvu.
+
+Projekt je zastavljen kot postopna uvedba, kjer se najprej uredijo osnovni poslovni procesi in podatki, nato pa se sistem nadgradi z dodatnimi moduli, integracijami in poročili. Cilj ni samo tehnična namestitev programske opreme, ampak vzpostavitev delujočega poslovnega okolja, ki ga bodo zaposleni dejansko uporabljali pri vsakodnevnem delu.
+
+2. Predmet ponudbe
+
+Predmet ponudbe je uvedba ERP rešitve ORKA ERP za podporo ključnim poslovnim procesom naročnika.
+
+V okviru projekta so predvideni naslednji moduli:
+
+Modul | Namen
+Prodaja | ponudbe, naročila kupcev, ceniki, dobavnice, računi
+Nabava | povpraševanja, naročila dobaviteljem, prevzemi
+Skladišče | zaloge, premiki, inventura, serijske številke
+Proizvodnja | delovni nalogi, kosovnice, planiranje po delovnih centrih
+Finance | osnovni finančni pregledi, odprte postavke, povezava z računovodstvom
+Poročila | vodstveni pregledi, prodaja, zaloga, realizacija, zamude
+
+3. Obseg dela
+
+V okviru uvedbe so vključene naslednje aktivnosti:
+
+3.1 Analiza poslovnih procesov
+
+Orka Informatika izvede uvodne delavnice s ključnimi uporabniki naročnika. Namen delavnic je pregledati obstoječe načine dela, identificirati posebnosti podjetja in določiti minimalni nabor funkcionalnosti za prvo uporabo sistema.
+
+Vključena področja:
+
+prodajni proces od povpraševanja do računa,
+
+nabavni proces od naročila do prevzema,
+
+skladiščno poslovanje,
+
+osnovni proizvodni tok,
+
+pregled obstoječih šifrantov,
+
+pregled potrebnih poročil.
+
+3.2 Nastavitev ERP okolja
+
+V tej fazi se pripravi osnovno okolje ORKA ERP, uporabniške vloge, pravice, šifranti in osnovne nastavitve sistema.
+
+Vključeno:
+
+vzpostavitev testnega okolja,
+
+vzpostavitev produkcijskega okolja,
+
+nastavitev uporabnikov in pravic,
+
+osnovna konfiguracija modulov,
+
+priprava začetnih šifrantov,
+
+nastavitev dokumentnih predlog.
+
+3.3 Migracija podatkov
+
+Predvidena je osnovna migracija podatkov iz obstoječih Excel tabel ali izvozov iz starega sistema.
+
+Vključeni podatki:
+
+kupci,
+
+dobavitelji,
+
+artikli,
+
+ceniki,
+
+začetne zaloge,
+
+odprta naročila, če so podatki ustrezno pripravljeni.
+
+Migracija vključuje en uvoz začetnega stanja in eno korekcijo po testnem pregledu naročnika.
+
+3.4 Uporabniško testiranje
+
+Po osnovni nastavitvi sistema se izvede uporabniško testiranje s predstavniki naročnika. Testiranje poteka na realnih primerih, kot so priprava ponudbe, izdelava naročila, prevzem blaga, izdaja dobavnice in priprava računa.
+
+3.5 Usposabljanje uporabnikov
+
+Izvedeno bo praktično usposabljanje za ključne uporabnike.
+
+Predvidena usposabljanja:
+
+prodaja in fakturiranje,
+
+nabava,
+
+skladišče,
+
+proizvodnja,
+
+vodstvena poročila.
+
+Usposabljanja se izvedejo na testnem okolju z realnimi primeri naročnika.
+
+3.6 Zagon v produkcijo
+
+Po potrditvi testiranja se izvede prehod v produkcijsko uporabo. Orka Informatika pri tem zagotovi podporo ob zagonu, odpravo začetnih napak in pomoč uporabnikom v prvih dneh uporabe.
+
+4. Terminski okvir
+
+Predviden terminski okvir uvedbe je 8 do 12 tednov od potrditve ponudbe in prejema vseh potrebnih vhodnih podatkov.
+
+Faza | Trajanje
+Analiza in priprava načrta | 1–2 tedna
+Nastavitev sistema | 2–3 tedne
+Migracija podatkov | 1–2 tedna
+Testiranje in popravki | 2–3 tedne
+Usposabljanje in produkcijski zagon | 1–2 tedna
+
+Terminski okvir je odvisen od razpoložljivosti ključnih uporabnikov naročnika in kakovosti vhodnih podatkov.
+
+5. Cena
+
+Predvidena vrednost projekta znaša:
+
+Postavka | Vrednost
+Analiza procesov in projektno vodenje | 3.200,00 EUR
+Nastavitev ERP okolja | 5.800,00 EUR
+Migracija podatkov | 2.400,00 EUR
+Uporabniško testiranje in podpora | 2.600,00 EUR
+Usposabljanja | 1.800,00 EUR
+Produkcijski zagon | 1.700,00 EUR
+Skupaj | 17.500,00 EUR
+
+Cene ne vključujejo DDV.
+
+Mesečna naročnina za uporabo sistema ORKA ERP znaša 890,00 EUR mesečno in vključuje osnovno vzdrževanje, gostovanje, varnostne kopije in redne posodobitve sistema.
+
+6. Pogoji plačila
+
+Predlagani plačilni pogoji:
+
+Faza | Delež
+Ob potrditvi ponudbe | 30 %
+Po zaključeni nastavitvi testnega okolja | 40 %
+Po produkcijskem zagonu | 30 %
+
+Rok plačila posameznega računa je 15 dni od izdaje računa.
+
+7. Odgovornosti naročnika
+
+Naročnik zagotovi:
+
+imenovanje odgovorne osebe projekta,
+
+dostop do ključnih uporabnikov,
+
+pravočasno posredovanje podatkov,
+
+pregled in potrditev migriranih podatkov,
+
+sodelovanje pri testiranju,
+
+pravočasno potrjevanje vsebinskih odločitev.
+
+Če naročnik ne zagotovi podatkov ali odzivov v dogovorjenih rokih, se lahko terminski načrt ustrezno podaljša.
+
+8. Izključitve
+
+Ponudba ne vključuje:
+
+razvoja posebnih integracij z zunanjimi sistemi,
+
+naprednih BI nadzornih plošč,
+
+prilagoditev, ki niso navedene v tej ponudbi,
+
+čiščenja neurejenih podatkov naročnika,
+
+računovodskih storitev,
+
+strojne opreme,
+
+licenc tretjih ponudnikov, če bi bile potrebne.
+
+Dodatne zahteve se obravnavajo kot sprememba obsega in se ocenijo posebej.
+
+9. Veljavnost ponudbe
+
+Ponudba velja 30 dni od datuma izdaje.
+
+Za Orka Informatika d.o.o.
+Janez Novak
+Vodja prodje
