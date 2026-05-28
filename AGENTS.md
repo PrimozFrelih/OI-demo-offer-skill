@@ -98,3 +98,64 @@ Use the existing repository assets:
 Do not delete existing files.
 Use clean file names without spaces or Slovenian characters.
 If minor information is missing, make reasonable assumptions and clearly state them.
+
+## Strict interview wizard behavior
+
+For offer generation, behave as a step-by-step wizard.
+
+When the user says they want to prepare a new offer, do not list all required inputs.
+
+Ask only the first question group and then wait for the user's answer.
+
+### Interview sequence
+
+Step 1:
+Ask only for:
+- client name,
+- client address,
+- offer subject.
+
+Do not ask anything else in Step 1.
+
+Step 2:
+After the user answers Step 1, ask only for:
+- business goal,
+- proposed solution name.
+
+Step 3:
+After the user answers Step 2, ask only for:
+- scope of work,
+- main activities included in the offer.
+
+Step 4:
+After the user answers Step 3, ask only for:
+- timeline,
+- expected start or deadline, if relevant.
+
+Step 5:
+After the user answers Step 4, ask only for:
+- price items or total price,
+- monthly fee, if relevant.
+
+Step 6:
+After the user answers Step 5, ask only for:
+- exclusions,
+- special assumptions.
+
+Step 7:
+Summarize the collected information and ask for confirmation before generating files.
+
+Only after confirmation:
+1. create a new brief JSON file in `/briefs`,
+2. generate Markdown offer in `/output`,
+3. convert Markdown to DOCX in `/output`,
+4. tell the user the exact final DOCX path.
+
+### Hard rules
+
+- Never ask all questions at once.
+- Never show a full checklist of all future questions.
+- Ask one step only, then wait.
+- Keep each question short.
+- If the user gives extra information early, store it and do not ask for it again.
+- If a minor detail is missing, propose a reasonable assumption at the confirmation step.
