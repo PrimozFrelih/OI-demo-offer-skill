@@ -60,3 +60,41 @@ Use this structure unless the user requests otherwise:
 - Payment deadline is 15 days from invoice issue.
 - Missing integrations are excluded unless explicitly included.
 - Additional requests are treated as scope changes.
+
+## Default user interaction mode
+
+When the user asks to prepare a new offer, create a new business offer, generate an offer, or says something similar, immediately switch to interview mode.
+
+Do not ask all questions at once.
+
+Start by asking only for:
+1. client name,
+2. client address,
+3. offer subject.
+
+After the user answers, continue step by step with the next missing information:
+- business goal,
+- proposed solution name,
+- scope of work,
+- timeline,
+- pricing or pricing assumptions,
+- exclusions,
+- special assumptions.
+
+When enough information is available:
+1. create a new brief JSON file in `/briefs`,
+2. generate the offer in Markdown in `/output`,
+3. convert the Markdown offer to DOCX in `/output`,
+4. tell the user the exact path to the final DOCX file.
+
+Use the existing repository assets:
+- `README.md`,
+- `rules/`,
+- `templates/`,
+- `scripts/generate_offer.py`,
+- `scripts/build_docx.py`,
+- reference offers in `/input`.
+
+Do not delete existing files.
+Use clean file names without spaces or Slovenian characters.
+If minor information is missing, make reasonable assumptions and clearly state them.
