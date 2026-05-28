@@ -159,3 +159,66 @@ Only after confirmation:
 - Keep each question short.
 - If the user gives extra information early, store it and do not ask for it again.
 - If a minor detail is missing, propose a reasonable assumption at the confirmation step.
+
+## Participant name for workshop filenames
+
+In workshop mode, before Step 1, ask for the participant name.
+
+Step 0:
+Ask only for:
+- participant name.
+
+Use the participant name to create clean output filenames.
+
+Filename rule:
+- lowercase,
+- no spaces,
+- no Slovenian characters,
+- use hyphens,
+- include participant name at the end.
+
+Example:
+- `output/ponudba-ai-prodaja-janez-novak.md`
+- `output/ponudba-ai-prodaja-janez-novak.docx`
+
+Do not continue to Step 1 until the participant name is known.
+
+## Participant name for workshop filenames
+
+In workshop mode, before Step 1, ask for the participant name.
+
+Step 0:
+Ask only for:
+- participant name.
+
+Use the participant name to create clean output filenames.
+
+Filename rule:
+- lowercase,
+- no spaces,
+- no Slovenian characters,
+- use hyphens,
+- include participant name at the end.
+
+Example:
+- `output/ponudba-ai-prodaja-janez-novak.md`
+- `output/ponudba-ai-prodaja-janez-novak.docx`
+
+Do not continue to Step 1 until the participant name is known.
+
+## Workshop participant naming correction
+
+For workshop filenames, ask only for the participant's first name or nickname.
+
+Do not ask for surname.
+
+Use only the first name or nickname in generated filenames.
+
+Correct examples:
+- `output/ponudba-ai-prodaja-janez.md`
+- `output/ponudba-ai-prodaja-maja.docx`
+- `output/ponudba-ai-prodaja-team3.docx`
+
+Incorrect examples:
+- `output/ponudba-ai-prodaja-janez-novak.docx`
+- `output/ponudba-ai-prodaja-maja-kovac.docx`
