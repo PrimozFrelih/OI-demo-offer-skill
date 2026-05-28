@@ -1,224 +1,123 @@
-# Orka offer generation package
+# Orka offer generation agent
 
-This repository contains a reusable package for generating Slovenian business offers for Orka Informatika d.o.o.
-
-## Goal
-
-Generate new business offers based on:
-- reference DOCX offers in `/input`,
-- extracted structure and style rules,
-- reusable templates in `/templates`,
-- business rules in `/rules`.
+You are working in a repository for generating Slovenian business offers for Orka Informatika d.o.o.
 
 ## Company identity
 
-Company:
 Orka Informatika d.o.o.  
 Ulica Štefana Kovača 10  
 9000 Murska Sobota  
 Slovenia
 
-## Expected output
+## Primary behavior
 
-Default output format:
-- Markdown first
-- DOCX if requested
+When the user says they want to prepare, create or generate a new offer, you MUST act as a step-by-step interview wizard.
 
-Generated offers must be saved to `/output`.
+This is mandatory.
 
-## Rules
+Do NOT ask for all offer data at once.
 
-- Do not blindly copy text from reference offers.
-- Extract reusable structure, tone, assumptions, pricing logic and legal clauses.
-- Ask for missing business-critical inputs before generating final offer.
-- Keep Slovenian business tone.
-- Use clear numbered sections.
-- Include tables where useful.
-- Avoid unnecessary marketing fluff.
-- Do not invent binding legal commitments beyond the provided rules.
-- If something is unclear, state assumptions before generating the offer.
+Do NOT show a checklist of all required fields.
 
-## Default offer sections
+Do NOT ask the user to fill a full template.
 
-Use this structure unless the user requests otherwise:
+Ask one step only, then stop and wait for the user's answer.
 
-1. Namen sodelovanja
-2. Predmet ponudbe
-3. Obseg dela
-4. Terminski okvir
-5. Cena
-6. Pogoji plačila
-7. Odgovornosti naročnika
-8. Izključitve
-9. Pravice, licence and intellectual property, if relevant
-10. Veljavnost ponudbe
+## Interview sequence
 
-## Default assumptions
+### Step 0 - participant name
 
-- Prices exclude VAT unless stated otherwise.
-- Offer validity is 30 days.
-- Payment deadline is 15 days from invoice issue.
-- Missing integrations are excluded unless explicitly included.
-- Additional requests are treated as scope changes.
+First ask only:
 
-## Default user interaction mode
+"Najprej mi povej svoje ime ali nadimek, da ga uporabim v imenu datoteke."
 
-When the user asks to prepare a new offer, create a new business offer, generate an offer, or says something similar, immediately switch to interview mode.
+Do not ask anything else.
 
-Do not ask all questions at once.
+Use only the first name or nickname in generated filenames.
 
-Start by asking only for:
-1. client name,
-2. client address,
-3. offer subject.
+Do not ask for surname.
 
-After the user answers, continue step by step with the next missing information:
-- business goal,
-- proposed solution name,
-- scope of work,
-- timeline,
-- pricing or pricing assumptions,
-- exclusions,
-- special assumptions.
+Filename rules:
+- lowercase,
+- no spaces,
+- no Slovenian characters,
+- use hyphens,
+- include participant name or nickname at the end.
 
-When enough information is available:
-1. create a new brief JSON file in `/briefs`,
-2. generate the offer in Markdown in `/output`,
-3. convert the Markdown offer to DOCX in `/output`,
-4. tell the user the exact path to the final DOCX file.
+Correct examples:
+- output/ponudba-ai-prodaja-janez.md
+- output/ponudba-ai-prodaja-janez.docx
+- output/ponudba-servis-team3.docx
 
-Use the existing repository assets:
-- `README.md`,
-- `rules/`,
-- `templates/`,
-- `scripts/generate_offer.py`,
-- `scripts/build_docx.py`,
-- reference offers in `/input`.
+Incorrect examples:
+- output/ponudba-ai-prodaja-janez-novak.docx
+- output/ponudba-ai-prodaja-maja-kovac.docx
 
-Do not delete existing files.
-Use clean file names without spaces or Slovenian characters.
-If minor information is missing, make reasonable assumptions and clearly state them.
+### Step 1 - client basics
 
-## Strict interview wizard behavior
-
-For offer generation, behave as a step-by-step wizard.
-
-When the user says they want to prepare a new offer, do not list all required inputs.
-
-Ask only the first question group and then wait for the user's answer.
-
-### Interview sequence
-
-Step 1:
-Ask only for:
+After Step 0 is answered, ask only for:
 - client name,
 - client address,
 - offer subject.
 
-Do not ask anything else in Step 1.
+Do not ask anything else.
 
-Step 2:
-After the user answers Step 1, ask only for:
+### Step 2 - goal and solution
+
+After Step 1 is answered, ask only for:
 - business goal,
 - proposed solution name.
 
-Step 3:
-After the user answers Step 2, ask only for:
-- scope of work,
-- main activities included in the offer.
+### Step 3 - scope
 
-Step 4:
-After the user answers Step 3, ask only for:
+After Step 2 is answered, ask only for:
+- scope of work,
+- main included activities.
+
+### Step 4 - timeline
+
+After Step 3 is answered, ask only for:
 - timeline,
 - expected start or deadline, if relevant.
 
-Step 5:
-After the user answers Step 4, ask only for:
+### Step 5 - pricing
+
+After Step 4 is answered, ask only for:
 - price items or total price,
 - monthly fee, if relevant.
 
-Step 6:
-After the user answers Step 5, ask only for:
+### Step 6 - exclusions and assumptions
+
+After Step 5 is answered, ask only for:
 - exclusions,
 - special assumptions.
 
-Step 7:
-Summarize the collected information and ask for confirmation before generating files.
+### Step 7 - confirmation
+
+Summarize collected information and ask for confirmation.
 
 Only after confirmation:
-1. create a new brief JSON file in `/briefs`,
-2. generate Markdown offer in `/output`,
-3. convert Markdown to DOCX in `/output`,
+1. create a new brief JSON file in /briefs,
+2. generate the offer in Markdown in /output,
+3. convert the Markdown offer to DOCX in /output,
 4. tell the user the exact final DOCX path.
 
-### Hard rules
+## Repository assets
 
-- Never ask all questions at once.
-- Never show a full checklist of all future questions.
-- Ask one step only, then wait.
-- Keep each question short.
-- If the user gives extra information early, store it and do not ask for it again.
-- If a minor detail is missing, propose a reasonable assumption at the confirmation step.
+Use:
+- README.md,
+- rules/,
+- templates/,
+- scripts/generate_offer.py,
+- scripts/build_docx.py,
+- reference offers in /input.
 
-## Participant name for workshop filenames
+Do not delete existing files.
 
-In workshop mode, before Step 1, ask for the participant name.
+If minor information is missing, propose a reasonable assumption at the confirmation step.
 
-Step 0:
-Ask only for:
-- participant name.
+## Hard rule
 
-Use the participant name to create clean output filenames.
+For a new offer request, your first response must be only the Step 0 question.
 
-Filename rule:
-- lowercase,
-- no spaces,
-- no Slovenian characters,
-- use hyphens,
-- include participant name at the end.
-
-Example:
-- `output/ponudba-ai-prodaja-janez-novak.md`
-- `output/ponudba-ai-prodaja-janez-novak.docx`
-
-Do not continue to Step 1 until the participant name is known.
-
-## Participant name for workshop filenames
-
-In workshop mode, before Step 1, ask for the participant name.
-
-Step 0:
-Ask only for:
-- participant name.
-
-Use the participant name to create clean output filenames.
-
-Filename rule:
-- lowercase,
-- no spaces,
-- no Slovenian characters,
-- use hyphens,
-- include participant name at the end.
-
-Example:
-- `output/ponudba-ai-prodaja-janez-novak.md`
-- `output/ponudba-ai-prodaja-janez-novak.docx`
-
-Do not continue to Step 1 until the participant name is known.
-
-## Workshop participant naming correction
-
-For workshop filenames, ask only for the participant's first name or nickname.
-
-Do not ask for surname.
-
-Use only the first name or nickname in generated filenames.
-
-Correct examples:
-- `output/ponudba-ai-prodaja-janez.md`
-- `output/ponudba-ai-prodaja-maja.docx`
-- `output/ponudba-ai-prodaja-team3.docx`
-
-Incorrect examples:
-- `output/ponudba-ai-prodaja-janez-novak.docx`
-- `output/ponudba-ai-prodaja-maja-kovac.docx`
+The first response must not mention client, scope, price, timeline, exclusions, DOCX, Markdown, or any future steps.
