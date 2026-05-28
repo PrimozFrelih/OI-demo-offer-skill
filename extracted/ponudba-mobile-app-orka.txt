@@ -1,0 +1,217 @@
+PONUDBA št. 2: Razvoj mobilne aplikacije
+
+PONUDBA št. 015/2026
+Za razvoj mobilne aplikacije za terensko delo in komunikacijo s strankami za naročnika Mobile apps d.o.o.
+
+Murska Sobota, 28. 5. 2026
+
+1. Namen sodelovanja
+
+Namen sodelovanja je razvoj mobilne aplikacije, ki bo zaposlenim na terenu omogočila hitrejši dostop do nalogov, podatkov o strankah, navodil za izvedbo dela in oddajo poročil neposredno iz mobilne naprave.
+
+Aplikacija je namenjena zmanjšanju ročnega dela, hitrejšemu pretoku informacij med pisarno in terenom ter boljši sledljivosti izvedenih aktivnosti. Rešitev je predvidena kot praktična poslovna aplikacija, ne kot marketinška aplikacija za splošno javnost.
+
+2. Predmet ponudbe
+
+Predmet ponudbe je razvoj mobilne aplikacije ORKA Field App za operativno uporabo zaposlenih na terenu.
+
+Aplikacija bo omogočala:
+
+prijavo uporabnika,
+
+pregled dodeljenih nalogov,
+
+pregled podatkov o stranki,
+
+navigacijo do lokacije,
+
+vnos izvedenega dela,
+
+dodajanje fotografij,
+
+podpis stranke,
+
+oddajo poročila,
+
+sinhronizacijo z zalednim sistemom,
+
+osnovna potisna obvestila.
+
+3. Predvidene funkcionalnosti
+
+3.1 Prijava in uporabniške vloge
+
+Aplikacija bo omogočala varno prijavo uporabnikov. Predvideni sta dve osnovni vlogi: terenski uporabnik in administrator oziroma dispečer.
+
+Terenski uporabnik vidi samo svoje naloge, administrator pa lahko naloge ureja v zalednem sistemu.
+
+3.2 Pregled nalogov
+
+Uporabnik bo imel na voljo seznam nalogov za tekoči dan oziroma izbrano obdobje. Vsak nalog bo vseboval osnovne podatke o stranki, lokaciji, tipu storitve, dogovorjenem terminu in trenutnem statusu.
+
+Predvideni statusi:
+
+novo,
+
+v teku,
+
+izvedeno,
+
+potrebno dopolniti,
+
+preklicano.
+
+3.3 Podrobnosti naloga
+
+Na posameznem nalogu bodo prikazani:
+
+naziv stranke,
+
+naslov,
+
+kontaktna oseba,
+
+telefonska številka,
+
+opis naloge,
+
+interna navodila,
+
+priloge,
+
+zgodovina zadnjih aktivnosti.
+
+3.4 Vnos izvedbe
+
+Po zaključku dela bo uporabnik vnesel poročilo o izvedbi. Vnos vključuje opis opravljenega dela, porabljen material, opombe, fotografije in morebitne dodatne zahteve stranke.
+
+3.5 Fotografije in podpis
+
+Aplikacija bo omogočala dodajanje fotografij pred izvedbo in po izvedbi. Stranka bo lahko izvedbo potrdila s podpisom na mobilni napravi.
+
+3.6 Sinhronizacija z zalednim sistemom
+
+Mobilna aplikacija se bo povezovala z zalednim sistemom prek API vmesnika. Če naročnik uporablja ERP ali CRM sistem, se lahko integracija izvede v okviru dodatnega dogovora.
+
+V tej ponudbi je vključena osnovna povezava z ORKA zalednim modulom za upravljanje nalogov.
+
+4. Tehnična izvedba
+
+Predvidena tehnična izvedba:
+
+Področje | Predlagana rešitev
+Mobilna aplikacija | Flutter ali React Native
+Platformi | Android in iOS
+Zaledni sistem | REST API
+Avtentikacija | uporabniško ime, geslo, JWT
+Baza podatkov | PostgreSQL
+Gostovanje | oblačno okolje ali strežnik naročnika
+Administracija | spletni administratorski vmesnik
+
+Končna izbira tehnologije se potrdi v začetni fazi projekta.
+
+5. Obseg dela
+
+V projekt so vključene naslednje aktivnosti:
+
+Aktivnost | Opis
+Analiza zahtev | uskladitev funkcionalnosti, vlog in glavnih uporabniških scenarijev
+UX zasnova | priprava osnovnih zaslonov in uporabniškega toka
+Razvoj aplikacije | razvoj mobilne aplikacije za Android in iOS
+Razvoj zaledja | API, baza podatkov in osnovni administracijski vmesnik
+Testiranje | funkcionalno testiranje in odprava napak
+Objava | priprava za objavo v trgovinah oziroma interno distribucijo
+Uvajanje | kratko usposabljanje administratorjev in ključnih uporabnikov
+
+6. Terminski okvir
+
+Predviden terminski okvir izvedbe je 10 do 14 tednov od potrditve ponudbe.
+
+Faza | Trajanje
+Analiza in UX zasnova | 2 tedna
+Razvoj prve verzije | 5–7 tednov
+Testiranje in popravki | 2–3 tedne
+Priprava za objavo in uvajanje | 1–2 tedna
+
+Terminski okvir se lahko spremeni, če se med projektom dodajo dodatne integracije ali bistvene spremembe funkcionalnosti.
+
+7. Cena
+
+Predvidena vrednost projekta znaša:
+
+Postavka | Vrednost
+Analiza zahtev in projektno vodenje | 3.600,00 EUR
+UX zasnova aplikacije | 2.400,00 EUR
+Razvoj mobilne aplikacije | 11.800,00 EUR
+Razvoj zalednega sistema in API | 7.200,00 EUR
+Testiranje in odprava napak | 3.200,00 EUR
+Priprava za objavo in uvajanje | 1.800,00 EUR
+Skupaj | 30.000,00 EUR
+
+Cene ne vključujejo DDV.
+
+Vzdrževanje po zaključku projekta se lahko dogovori posebej. Predlagan osnovni paket vzdrževanja znaša 650,00 EUR mesečno in vključuje manjše popravke, tehnično podporo, spremljanje delovanja in osnovne posodobitve.
+
+8. Pogoji plačila
+
+Predlagani plačilni pogoji:
+
+Faza | Delež
+Ob potrditvi ponudbe | 30 %
+Po potrjeni UX zasnovi | 20 %
+Po predaji testne verzije | 30 %
+Po zaključku projekta | 20 %
+
+Rok plačila je 15 dni od izdaje računa.
+
+9. Predpostavke
+
+Ponudba temelji na naslednjih predpostavkah:
+
+aplikacija se razvije za slovenski jezik,
+
+vključena sta Android in iOS,
+
+naročnik zagotovi vsebinske podatke in testne uporabnike,
+
+naročnik pravočasno potrjuje zaslone in funkcionalnosti,
+
+integracija z zunanjimi sistemi ni vključena, razen osnovnega ORKA zalednega modula,
+
+napredni offline način ni vključen v prvo verzijo.
+
+10. Izključitve
+
+Ponudba ne vključuje:
+
+naprednega offline delovanja z lokalno bazo,
+
+integracije s plačilnimi sistemi,
+
+integracije z zunanjimi ERP/CRM sistemi,
+
+večjezičnosti,
+
+napredne analitike,
+
+stroškov Apple Developer in Google Play računov,
+
+oblikovanja javne marketinške spletne strani,
+
+naknadnih sprememb po potrjeni specifikaciji.
+
+Dodatne funkcionalnosti se ocenijo ločeno.
+
+11. Pravice in izvorna koda
+
+Po plačilu vseh obveznosti naročnik pridobi pravico do uporabe razvite aplikacije za lastne poslovne potrebe. Izvorna koda in pravice do nadaljnjega razvoja se uredijo glede na končni dogovor med naročnikom in izvajalcem.
+
+Če naročnik želi popoln prenos izvorne kode in vseh materialnih avtorskih pravic, se to opredeli v ločeni pogodbeni klavzuli.
+
+12. Veljavnost ponudbe
+
+Ponudba velja 30 dni od datuma izdaje.
+
+Za Orka Informatika d.o.o.
+Janez Novak
+Vodja prodaje
