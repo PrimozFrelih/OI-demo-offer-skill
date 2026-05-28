@@ -1,0 +1,50 @@
+{
+  "offer_number": "016/2026",
+  "date": "28. 5. 2026",
+  "client_name": "Demo podjetje d.o.o.",
+  "client_address": "Industrijska cesta 12, 1000 Ljubljana",
+  "offer_title": "Ponudba za uvedbo sistema za obdelavo servisnih zahtevkov",
+  "project_goal": "Vzpostaviti digitalno rešitev za zajem, obdelavo in spremljanje servisnih zahtevkov od prijave do zaključka.",
+  "solution_name": "ORKA Service Desk",
+  "scope": [
+    "analiza obstoječega procesa prijave servisnih zahtevkov",
+    "priprava osnovnega podatkovnega modela",
+    "razvoj spletnega vmesnika za prijavo zahtevkov",
+    "administrativni pregled zahtevkov",
+    "statusi zahtevkov in osnovna obvestila",
+    "testiranje in uvajanje ključnih uporabnikov"
+  ],
+  "timeline": "6 do 8 tednov",
+  "price_items": [
+    {
+      "name": "Analiza in projektno vodenje",
+      "amount_eur": 2400
+    },
+    {
+      "name": "Razvoj spletnega vmesnika",
+      "amount_eur": 6200
+    },
+    {
+      "name": "Razvoj administrativnega modula",
+      "amount_eur": 4800
+    },
+    {
+      "name": "Testiranje in uvajanje",
+      "amount_eur": 1800
+    }
+  ],
+  "monthly_fee_eur": 390,
+  "payment_terms": "30 % ob potrditvi ponudbe, 40 % po predaji testne verzije, 30 % po zaključku projekta",
+  "exclusions": [
+    "integracije z zunanjimi ERP sistemi",
+    "napredna analitika",
+    "mobilna aplikacija",
+    "večjezičnost",
+    "migracija zgodovinskih podatkov"
+  ],
+  "special_assumptions": [
+    "naročnik zagotovi kontaktno osebo za vsebinske potrditve",
+    "rešitev se v prvi fazi pripravi v slovenskem jeziku",
+    "vhodni podatki morajo biti pripravljeni v dogovorjeni strukturi"
+  ]
+}
